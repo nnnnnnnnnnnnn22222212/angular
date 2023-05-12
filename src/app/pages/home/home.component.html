@@ -1,0 +1,25 @@
+<div>
+    <button class="btn btn-dark">Thêm</button>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">IMG</th>
+                <th scope="col">NAME</th>
+                <th scope="col">PRICE</th>
+                <th scope="col">ACCTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr
+            app-product-item
+            *ngFor="let product of products; let i = index"
+            [product]="product"
+            [index]="i"
+            (onRemove)="removeItem($event)"
+            >
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
