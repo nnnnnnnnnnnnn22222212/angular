@@ -13,7 +13,7 @@ import { ProductDetailComponent } from './component/product-detail/product-detai
 import { ProductComponent } from './component/product/product.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,6 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

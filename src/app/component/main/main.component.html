@@ -1,19 +1,51 @@
-<section id="home-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-4" *ngFor="let product of products">
-          <div class="card" style="width: 18rem">
-            <div class="card-body">
-              <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
-          
-              <h5 class="card-title" >{{ product.name }}</h5>
-              
-              
-              <p class="card-text">Giá: {{ product.price }}</p>
-              <a href="#" class="btn btn-primary">Send Mail</a>
-            </div>
-          </div>
+<section class="home" id="home">
+  <div class="content">
+    <h3>Thời Trang</h3>
+    <span>Thời trang cho giới trẻ</span>
+    <p>dsjkhfkdhkjdshfkjsdfhkjdfhksdhfkjdsfhksdfhsdkfhksjdjhdkjhdkfhd</p>
+    <a href="" class="btn">Shop now</a>
+  </div>
+</section>
+
+
+
+<section class="about" id="about">
+  <h1 class="heading"><span>about</span> us</h1>
+  <div class="roww" *ngFor="let videoo of video">
+      <div class="video-container">
+        <video src="{{videoo.video}}" loop autoplay muted> </video>
+        <h3>best flower</h3>
+      </div>
+      <div class="content">
+        <h3>Why chose us?</h3>
+        <p>dfjhsalkdhjaslkdhbnaskjhfkjsdhajfkljasdhfksdfkdfjsalkdfjmsdlkfjsdlkfjsamd</p>
+        <p>dfjhsalkdhjaslkdhbnaskjhfkjsdhajfklja</p>
+        <a href="" class="btn">lear more</a>
+      </div>
+  </div>
+
+</section>
+
+<section class="products" id="products">
+  <h1 class="heading">
+    list <span>products</span>
+  </h1>
+  <div class="box-con" *ngFor="let product of products">
+    <div class="box" >
+      <span class="discout">{{product.description}}</span>
+      <div class="image" >
+        <img src="{{product.imgUrl}}" alt="">
+        <div class="icons">
+          <a href="" class="fas fa-heart"></a>
+          <a href="" class="cart-btn">add to card</a>
+          <a href="" class="fas fa-share"></a>
         </div>
       </div>
+      <div class="content">
+        <h3>{{product.name}}</h3>
+        <div class="price">{{product.price}}</div>
+      </div>
     </div>
-  </section>
+  </div>
+  
+</section>

@@ -7,12 +7,17 @@ import { Products } from '../../common/main';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+  video = [
+    {
+      video: "https://youtu.be/8-MFg_0wY4U"
+    }
+  ]
   products: Products[] = [
     {
       id: '1',
       name: 'linh tinh',
       price: 200,
-      description: 'Mo ta',
+      description: '10%',
       imgUrl:
         'https://picsum.photos/200/200',
     },
@@ -20,7 +25,7 @@ export class MainComponent {
       id: '2',
       name: 'fsasa',
       price: 300,
-      description: 'Mo ta cho san pham',
+      description: '20%',
       imgUrl:
         'https://picsum.photos/200/200',
     },
@@ -28,7 +33,31 @@ export class MainComponent {
       id: '3',
       name: 'dsad',
       price: 400,
-      description: 'Mo ta cho san pham',
+      description: '30%',
+      imgUrl:
+        'https://picsum.photos/200/200',
+    },
+    {
+      id: '3',
+      name: 'dsad',
+      price: 400,
+      description: '30%',
+      imgUrl:
+        'https://picsum.photos/200/200',
+    },
+    {
+      id: '3',
+      name: 'dsad',
+      price: 400,
+      description: '30%',
+      imgUrl:
+        'https://picsum.photos/200/200',
+    },
+    {
+      id: '3',
+      name: 'dsad',
+      price: 400,
+      description: '30%',
       imgUrl:
         'https://picsum.photos/200/200',
     },
