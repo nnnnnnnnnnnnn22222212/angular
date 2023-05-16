@@ -9,7 +9,11 @@ import { FooterComponent } from './component/footer/footer.component';
 import { AddProductsComponent } from './component/add-products/add-products.component';
 import { MainComponent } from './component/main/main.component';
 import { ProductItemComponent } from './component/product-item/product-item.component';
-
+import { ProductDetailComponent } from './component/product-detail/product-detail.component';
+import { ProductComponent } from './component/product/product.component';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +22,16 @@ import { ProductItemComponent } from './component/product-item/product-item.comp
     FooterComponent,
     AddProductsComponent,
     MainComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    ProductDetailComponent,
+    ProductComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

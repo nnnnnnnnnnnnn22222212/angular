@@ -33,4 +33,18 @@ export class MainComponent {
         'https://picsum.photos/200/200',
     },
   ];
+  productName= "";
+  status: boolean = false;
+  product!: Products;
+  getValue(e: any){
+    this.productName = e.target.value;
+  } 
+  changeStatus() {
+    this.status = !this.status;
+  }
+  selectedProduct: any;
+
+  onSelectProduct(product: any) {
+    this.selectedProduct = product;
+  }
 }
