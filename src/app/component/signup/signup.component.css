@@ -1,0 +1,60 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.signup-container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: animate__animated animate__zoomIn;
+  animation-duration: 0.5s;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  animation: animate__animated animate__fadeIn;
+}
+
+label {
+  display: block;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  animation: animate__animated animate__fadeIn;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  animation: animate__animated animate__fadeInUp;
+  animation-delay: 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}

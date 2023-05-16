@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,8 +11,11 @@ import { ProductItemComponent } from './component/product-item/product-item.comp
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { ProductComponent } from './component/product/product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './component/login/login.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { SignupComponent } from './component/signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     ProductItemComponent,
     ProductDetailComponent,
     ProductComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

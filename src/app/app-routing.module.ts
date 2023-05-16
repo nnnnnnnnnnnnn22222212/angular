@@ -9,10 +9,12 @@ import { AddProductsComponent } from './component/add-products/add-products.comp
 import { MainComponent } from './component/main/main.component';
 import { ProductItemComponent } from './component/product-item/product-item.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
-import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
+import { LoginComponent } from './component/login/login.component';
 const routes: Routes = [
   {path: '', component: MainComponent},
-  {path: 'singin', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path:'signup',component:SignupComponent}
 
 ];
 
