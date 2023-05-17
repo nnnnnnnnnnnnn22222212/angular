@@ -1,6 +1,22 @@
 :root{
     --pink: #FF6699;
 }
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+  html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+  }
 section{
     padding: 2rem 9%;
 }
@@ -104,14 +120,28 @@ section{
     padding-top: 1rem ;
     line-height: 1.5;
 }
-.products .box-con{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    
+.products .size .minn:hover .immg .icc{
+    bottom: 0;
 }
-.products .box-con .box{
-    
+.products .size .minn .content{
+    padding: 2rem;
+    text-align: center;
+}
+.products .size .minn .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.products .size .minn .content .price{
+    font-size: 2.5rem;
+    color: #FF6699;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.products .size .minn .content .price span{
+    font-size: 2.5rem;
+    color: #FF6699;
+    font-weight: bolder;
+    padding-top: 1rem;
 }
 
 
@@ -169,7 +199,10 @@ section{
 
 
 
-@media (max-width: 996px){
+
+
+
+@media (max-width: 991px){
 
     html{
         font-size: 55%;
@@ -177,6 +210,9 @@ section{
       }
     section{
         padding: 2rem;
+    }
+    .home{
+        background-position: left;
     }
   }
   @media (max-width: 768px){
