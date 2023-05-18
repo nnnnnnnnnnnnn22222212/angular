@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -16,18 +15,22 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
+import { SignupComponent } from './component/signup/signup.component';
 const routes: Routes = [
-  {path: '', component: LayoutComponent, children: [
-    {path: '', component: MainComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'productt', component: ProducttComponent}
-  ]},
-  
-
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: '', component: MainComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'productt', component: ProducttComponent },
+      { path: 'signup', component: SignupComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
