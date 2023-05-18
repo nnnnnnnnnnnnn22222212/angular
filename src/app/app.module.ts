@@ -12,6 +12,7 @@ import { ProductItemComponent } from './component/product-item/product-item.comp
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { ProductComponent } from './component/product/product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './component/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductItemComponent,
     ProductDetailComponent,
     ProductComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
