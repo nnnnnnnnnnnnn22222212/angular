@@ -12,6 +12,10 @@ import { ProductItemComponent } from './component/product-item/product-item.comp
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { ProductComponent } from './component/product/product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutComponent } from './layout/layout.component';
+import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
+import { AboutComponent } from './component/about/about.component';
+import { ProducttComponent } from './component/productt/productt.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductItemComponent,
     ProductDetailComponent,
     ProductComponent,
+    LayoutComponent,
+    LayoutAdminComponent,
+    AboutComponent,
+    ProducttComponent,
   ],
   imports: [
     BrowserModule,

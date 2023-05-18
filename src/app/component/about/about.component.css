@@ -1,6 +1,3 @@
-:root{
-    --pink: #FF6699;
-}
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -33,46 +30,6 @@ section{
 .btn:hover{
     background: #FF6699;
 }
-.home{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-   background-size: cover;
-   background-position: center;
-
-}
-.home .content{
-    max-width: 50rem;
-}
-.home .content h3{
-    font-size: 4rem;
-    color: #333;
-    
-}
-.home .content span{
-    font-size: 2.5rem;
-    color: #FF6699;
-    padding:.5rem 0;
-    line-height: 0.3;
-}
-.home .content p{
-    font-size: 1rem;
-    color: #999;
-    padding: .1rem 0;
-    line-height: 0.3;
-}
-.heading{
-    text-align: center;
-    font-size: 4rem;
-    color: #333;
-    padding: 1rem;
-    margin: 2rem 0;
-    background: rgba(255, 51, 153, .05);
-}
-.heading span{
-    color: #FF6699
-}
-
 .about .roww{
     display: flex;
     align-items: center;
@@ -120,66 +77,6 @@ section{
     padding-top: 1rem ;
     line-height: 1.5;
 }
-.products .size .minn:hover .immg .icc{
-    bottom: 0;
-}
-.products .size .minn .content{
-    padding: 2rem;
-    text-align: center;
-}
-.products .size .minn .content h3{
-    font-size: 2.5rem;
-    color: #333;
-}
-.products .size .minn .content .price{
-    font-size: 2.5rem;
-    color: #FF6699;
-    font-weight: bolder;
-    padding-top: 1rem;
-}
-.products .size .minn .content .price span{
-    font-size: 2.5rem;
-    color: #FF6699;
-    font-weight: bolder;
-    padding-top: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

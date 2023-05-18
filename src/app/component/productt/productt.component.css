@@ -1,0 +1,111 @@
+.products .size .minn:hover .immg .icc{
+    bottom: 0;
+}
+.products .size .minn .content{
+    padding: 2rem;
+    text-align: center;
+}
+.products .size .minn .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.products .size .minn .content .price{
+    font-size: 2.5rem;
+    color: #FF6699;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.products .size .minn .content .price span{
+    font-size: 2.5rem;
+    color: #FF6699;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:850px){
+
+    html{
+        font-size: 55%;
+  
+      }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+    }
+  }
+  @media (min-width: 768px){
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+  }
+  @media (min-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+  }

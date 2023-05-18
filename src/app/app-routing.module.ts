@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -9,10 +10,19 @@ import { AddProductsComponent } from './component/add-products/add-products.comp
 import { MainComponent } from './component/main/main.component';
 import { ProductItemComponent } from './component/product-item/product-item.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
-import { LoginComponent } from './login/login.component';
+import { ProductComponent } from './component/product/product.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutComponent } from './layout/layout.component';
+import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
+import { AboutComponent } from './component/about/about.component';
+import { ProducttComponent } from './component/productt/productt.component';
 const routes: Routes = [
-  {path: '', component: MainComponent},
-  {path: 'singin', component: LoginComponent}
+  {path: '', component: LayoutComponent, children: [
+    {path: '', component: MainComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'productt', component: ProducttComponent}
+  ]},
+  
 
 ];
 
