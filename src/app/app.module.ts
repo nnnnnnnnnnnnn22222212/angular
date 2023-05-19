@@ -16,6 +16,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProducttComponent } from './component/productt/productt.component';
     LayoutAdminComponent,
     AboutComponent,
     ProducttComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
