@@ -1,118 +1,32 @@
-:root{
-  --pink: #FF6699;
-}
-*{
-  margin: 0; padding: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: .2s linear;
-}
-html{
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
-  overflow-x: hidden;
-}
-header{
+.centered-navbar{
   position: fixed;
-  top: 0; left: 0; right: 0;
-  background: #fff;
-  padding: 1.7rem 7%;
-  display: flex;
+  top: 10px;
+  left: 0;
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px;
   align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  box-shadow: 0 .4rem 1rem rgba(0,0,0.1);
-}
-header .logo{
-  font-size: 3rem;
-  color: #333;
-  font-weight: bolder;
-}
-header .logo span{
-  color: #FF6699
-}
-header .navbarr a{
-  font-size: 2rem;
-  padding: 0 1.5rem;
-  color: #666;
-}
-header .navbarr a:hover{
-  color: #FF6699
-}
-header .icon a{
-  font-size: 2rem;
-  color: #333;
-  margin-left: 0.5rem;
-}
-header .icon a:hover{
-  color: #FF6699
-}
-header #toggler{
-  display: none;
-}
-header .fa-bars{
-  font-size: 3rem;
-  color: #333;
-  border-radius: .5rem;
-  padding: .5rem  1.5rem;
-  cursor: pointer;
-  border: .1rem solid rgba(0,0,0,.3);
-  display: none;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  position: fixed;
+  margin-top: 30px;
+  transition: 0.3s ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 991px){
-
-  html{
-      font-size: 55%;
-
-    }
-  header{
-      padding: 2rem;
-  }
+.container{
+  display: flex;
+  align-content: center;
 }
-@media (max-width: 768px){
-  header .fa-bars{
-      display: block;
-  }
-  header .navbarr{
-      position: absolute;
-      top: 100%; left: 0; right: 0;
-      background: #eee;
-      border-top: .1rem solid rgba(0,0,0,.1);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    header #toggler:checked ~ .navbarr{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  header .navbarr a{
-    margin: 1.5rem;
-    padding: 1.5rem;
-    background: #fff;
-    border: .1rem solid rgba(0,0,0,.1);
-    display: block;
-  }
+img {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
 }
-@media (max-width: 450px){
-
-  html{
-      font-size: 50%;
-
-    }
-  header{
-      padding: 2rem;
-  }
+.card .header-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }

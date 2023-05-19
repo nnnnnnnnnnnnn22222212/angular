@@ -7,7 +7,6 @@ import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { AddProductsComponent } from './component/add-products/add-products.component';
-import { MainComponent } from './component/main/main.component';
 import { ProductItemComponent } from './component/product-item/product-item.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { ProductComponent } from './component/product/product.component';
@@ -16,7 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
-
+import { NavbarComponent } from './component/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +23,6 @@ import { ProducttComponent } from './component/productt/productt.component';
     HomeComponent,
     FooterComponent,
     AddProductsComponent,
-    MainComponent,
     ProductItemComponent,
     ProductDetailComponent,
     ProductComponent,
@@ -32,14 +30,10 @@ import { ProducttComponent } from './component/productt/productt.component';
     LayoutAdminComponent,
     AboutComponent,
     ProducttComponent,
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
