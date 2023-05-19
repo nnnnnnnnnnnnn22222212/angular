@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  menu = [
-    {id: 1, name: 'Home'},
-    {id: 1, name: 'Detail'},
-    {id: 1, name: 'Projects'},
-    {id: 1, name: 'Contacts'},
-  ]
+
 }
