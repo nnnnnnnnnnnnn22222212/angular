@@ -15,18 +15,17 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
-import { SignupComponent } from './component/signup/signup.component';
+
+import { ContactComponent } from './component/contact/contact.component';
 const routes: Routes = [
-  {
-    path: '',
-    component: LayoutComponent,
-    children: [
-      { path: '', component: MainComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'productt', component: ProducttComponent },
-      { path: 'signup', component: SignupComponent },
-    ],
-  },
+  {path: '', component: LayoutComponent, children: [
+    {path: '', component: MainComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'productt', component: ProducttComponent},
+    {path: 'contact', component: ContactComponent}
+  ]},
+  
+
 ];
 
 @NgModule({

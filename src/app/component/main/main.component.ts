@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Products } from '../../common/main';
+import { producttt } from 'src/app/data/main';
 
 @Component({
   selector: 'app-main',
@@ -12,56 +13,7 @@ export class MainComponent {
       video: "https://youtu.be/8-MFg_0wY4U"
     }
   ]
-  products: Products[] = [
-    {
-      id: '1',
-      name: 'linh tinh',
-      price: 200,
-      description: '10%',
-      imgUrl:
-        'https://picsum.photos/200/200',
-    },
-    {
-      id: '2',
-      name: 'fsasa',
-      price: 300,
-      description: '20%',
-      imgUrl:
-        'https://picsum.photos/200/200',
-    },
-    {
-      id: '3',
-      name: 'dsad',
-      price: 400,
-      description: '30%',
-      imgUrl:
-        'https://picsum.photos/200/200',
-    },
-    {
-      id: '3',
-      name: 'dsad',
-      price: 400,
-      description: '30%',
-      imgUrl:
-        'https://picsum.photos/200/200',
-    },
-    {
-      id: '3',
-      name: 'dsad',
-      price: 400,
-      description: '30%',
-      imgUrl:
-        'https://picsum.photos/200/200',
-    },
-    {
-      id: '3',
-      name: 'dsad',
-      price: 400,
-      description: '30%',
-      imgUrl:
-        'https://picsum.photos/200/200',
-    },
-  ];
+ products = producttt
   productName= "";
   status: boolean = false;
   product!: Products;
