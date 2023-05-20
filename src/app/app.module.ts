@@ -7,7 +7,6 @@ import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { AddProductsComponent } from './component/add-products/add-products.component';
-import { MainComponent } from './component/main/main.component';
 import { ProductItemComponent } from './component/product-item/product-item.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { ProductComponent } from './component/product/product.component';
@@ -16,7 +15,9 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
-import { ContactComponent } from './component/contact/contact.component';
+
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { MainComponent } from './component/main/main.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,6 @@ import { ContactComponent } from './component/contact/contact.component';
     HomeComponent,
     FooterComponent,
     AddProductsComponent,
-    MainComponent,
     ProductItemComponent,
     ProductDetailComponent,
     ProductComponent,
@@ -33,15 +33,13 @@ import { ContactComponent } from './component/contact/contact.component';
     LayoutAdminComponent,
     AboutComponent,
     ProducttComponent,
-    ContactComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+
+    NavbarComponent,
+    MainComponent
 
   ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

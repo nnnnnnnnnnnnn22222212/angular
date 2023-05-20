@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -16,6 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
+
 import { ContactComponent } from './component/contact/contact.component';
 const routes: Routes = [
   {path: '', component: LayoutComponent, children: [
@@ -30,6 +30,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

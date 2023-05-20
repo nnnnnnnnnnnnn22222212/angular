@@ -1,118 +1,161 @@
-:root{
-  --pink: #FF6699;
+.centered-navbar {
+  z-index: 99;
 }
-*{
-  margin: 0; padding: 0;
+
+.container {
+  display: flex;
+  align-content: center;
+  z-index: 999;
+}
+img {
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  object-fit: cover;
+}
+.header-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   outline: none;
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
   overflow-x: hidden;
 }
-header{
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  background: #fff;
-  padding: 1.7rem 7%;
+section {
+  padding: 2rem 9%;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #ff6699;
+}
+
+.home .content p {
+  font-size: 1rem;
+  color: #999;
+  padding: 0.1rem 0;
+  line-height: 0.3;
+}
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: rgba(255, 51, 153, 0.05);
+}
+.heading span {
+  color: #ff6699;
+}
+
+.about .roww {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  box-shadow: 0 .4rem 1rem rgba(0,0,0.1);
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
 }
-header .logo{
+.about .roww .video-container {
+  flex: 1 1 40rem;
+  position: relative;
+}
+.about .roww .video-container .video {
+  width: 100%;
+  border: 1.5rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .roww .content {
+  flex: 1 1 40rem;
+}
+.about .roww .content h3 {
   font-size: 3rem;
   color: #333;
+}
+.about .roww .content p {
+  font-size: 1.5rem;
+  color: #999;
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+.products .size .minn:hover .immg .icc {
+  bottom: 0;
+}
+.products .size .minn .content {
+  padding: 2rem;
+  text-align: center;
+}
+.products .size .minn .content h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+.products .size .minn .content .price {
+  font-size: 2.5rem;
+  color: #ff6699;
   font-weight: bolder;
+  padding-top: 1rem;
 }
-header .logo span{
-  color: #FF6699
-}
-header .navbarr a{
-  font-size: 2rem;
-  padding: 0 1.5rem;
-  color: #666;
-}
-header .navbarr a:hover{
-  color: #FF6699
-}
-header .icon a{
-  font-size: 2rem;
-  color: #333;
-  margin-left: 0.5rem;
-}
-header .icon a:hover{
-  color: #FF6699
-}
-header #toggler{
-  display: none;
-}
-header .fa-bars{
-  font-size: 3rem;
-  color: #333;
-  border-radius: .5rem;
-  padding: .5rem  1.5rem;
-  cursor: pointer;
-  border: .1rem solid rgba(0,0,0,.3);
-  display: none;
+.products .size .minn .content .price span {
+  font-size: 2.5rem;
+  color: #ff6699;
+  font-weight: bolder;
+  padding-top: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 991px){
-
-  html{
-      font-size: 55%;
-
-    }
-  header{
-      padding: 2rem;
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 2rem;
+  }
+  .home {
+    background-position: left;
   }
 }
-@media (max-width: 768px){
-  header .fa-bars{
-      display: block;
+@media (min-width: 768px) {
+  .home .content h3 {
+    font-size: 5rem;
   }
-  header .navbarr{
-      position: absolute;
-      top: 100%; left: 0; right: 0;
-      background: #eee;
-      border-top: .1rem solid rgba(0,0,0,.1);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    header #toggler:checked ~ .navbarr{
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  header .navbarr a{
-    margin: 1.5rem;
-    padding: 1.5rem;
-    background: #fff;
-    border: .1rem solid rgba(0,0,0,.1);
-    display: block;
+  .home .content span {
+    font-size: 2.5rem;
   }
 }
-@media (max-width: 450px){
-
-  html{
-      font-size: 50%;
-
-    }
-  header{
-      padding: 2rem;
+@media (min-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
   }
 }
