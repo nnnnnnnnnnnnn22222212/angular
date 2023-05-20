@@ -16,6 +16,7 @@ import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
+import { MainComponent } from './component/main/main.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { NavbarComponent } from './component/navbar/navbar.component';
     AboutComponent,
     ProducttComponent,
     NavbarComponent,
+    MainComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
