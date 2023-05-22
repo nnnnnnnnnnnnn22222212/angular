@@ -1,129 +1,43 @@
-<section class="home" id="home">
-    <div class="content">
-      <h3>Thời Trang</h3>
-      <span>Thời trang cho giới trẻ</span>
-      <p>dsjkhfkdhkjdshfkjsdfhkjdfhksdhfkjdsfhksdfhsdkfhksjdjhdkjhdkfhd</p>
-      <a href="" class="btn">Shop now</a>
-    </div>
-  </section>
-  
-  
-  
-  <section class="about" id="about">
-    <h1 class="heading"><span>about</span> us</h1>
-    <div class="roww" *ngFor="let videoo of video">
-        <div class="video-container">
-          <video src="{{videoo.video}}" loop autoplay muted> </video>
-          <h3>best flower</h3>
-        </div>
-        <div class="content">
-          <h3>Why chose us?</h3>
-          <p>dfjhsalkdhjaslkdhbnaskjhfkjsdhajfkljasdhfksdfkdfjsalkdfjmsdlkfjsdlkfjsamd</p>
-          <p>dfjhsalkdhjaslkdhbnaskjhfkjsdhajfklja</p>
-          <a href="" class="btn">lear more</a>
-        </div>
-    </div>
-  
-  </section>
-  <style>
-    .size{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-    }
-    .minn{
-      flex: 1 1 30rem;
-      box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 1);
-      border-radius: .5rem;
-      border: .1rem solid rgba(0, 0, 0, 1);
-      position: relative;
-    }
-    .spnn{
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      padding: .7rem 1rem;
-      font-size: 1.2rem;
-      color: #FF6699;
-      background: rgba(255, 51, 153, .05);
-      z-index: 1;
-      border-radius:  .5rem;
-    }
-    .immg{
-      position: relative;
-      text-align: center;
-      padding-top: 2rem;
-       overflow: hidden;
-    }
-    .immmg{
-      height: 25rem;
-      
-    }
-    .immmg:hover{
-      transform: scale(1.1);
-      
-    }
-    .icc{
-      position: absolute;
-      bottom: -7rem; left: 0;
-      right: 0;
-      display: flex;
-  
-    }
-    
-    .icca{
-      height: 5rem;
-      line-height: 5rem;
-      font-size: 2rem;
-      width: 50%;
-      background: #FF6699;
-      color: #fff;
-    }
-    .icca:hover{
-      background: #333;
-    }
-    .card{
-      border-left: .1rem solid #fff7;
-      border-right: .1rem solid #fff7;
-      width: 100%;
-    }
-    
-  </style>
-  <section class="products" id="products">
-    <h1 class="heading">
-      list <span>products</span>
-    </h1>
-    <div class="box-con size" >
-      <div class="box minn" *ngFor="let product of products">
-        <span class="discout spnn">{{product.description}}</span>
-        <div class="image immg" >
-          <img class="immmg" src="{{product.imgUrl}}" alt="">
-          <div class="icons icc">
-            <a href="" class="fas fa-heart icca"></a>
-            <a href="" class="cart-btn icca card">add to card</a>
-            <a href="" class="fas fa-share icca"></a>
+
+<div class="container">
+  <h2>Who Are You Shopping For ?</h2>
+
+  <ul>
+    <li
+      [ngStyle]="{ color: selectedOption === 'women' ? 'black' : 'gray' }"
+      (click)="selectOption('women')"
+      (click)="selectOption1('women')"
+    >
+      Women
+    </li>
+    <li
+      [ngStyle]="{ color: selectedOption === 'men' ? 'black' : 'gray' }"
+      (click)="selectOption('men')"
+      (click)="selectOption1('men')"
+    >
+      Men
+    </li>
+    <li
+      [ngStyle]="{ color: selectedOption === 'kids' ? 'black' : 'gray' }"
+      (click)="selectOption('kids')"
+      (click)="selectOption1('kids')"
+    >
+      Kids
+    </li>
+  </ul>
+  <div>
+    <section class="products" id="products">
+      <div class="box-con size" style="display: flex">
+        <div class="box minn" *ngFor="let product of filteredProducts">
+          <div class="image immg">
+            <img
+              class="immmg"
+              src="https://assets.adidas.com/images/w_500,h_500,f_auto,q_auto,fl_lossy,c_fill,g_auto/e9c4ead781a949b3b5ddaf1900dc9fed_9366/%C3%A1o-hoodie-t%E1%BA%ADp-luy%E1%BB%87n-d%C3%A1ng-l%E1%BB%ADng-hiit-aeroready.jpg"
+              alt=""
+            />
           </div>
         </div>
-        <div class="content">
-          <h3>{{product.name}}</h3>
-          <div class="price">{{product.price}}</div>
-        </div>
       </div>
-    </div>
-    
-  </section>
-  <section  class="contactt" id="contact">
-    <h1 class="heading"><span>contact</span>us</h1>
-    <div class="rowww">
-        <form action="">
-            <input type="text" placeholder="name" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="number" placeholder="number" class="box">
-            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
-        </form>
-        <div class="image">
-          <img src="" alt="">
-        </div>  
-    </div>
-  </section>
+    </section>
+  </div>
+</div>
