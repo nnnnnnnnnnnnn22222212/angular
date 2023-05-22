@@ -1,0 +1,42 @@
+<div class="container">
+  <h2>Who Are You Shopping For ?</h2>
+
+  <ul>
+    <li
+      [ngStyle]="{ color: selectedOption === 'women' ? 'black' : 'gray' }"
+      (click)="selectOption('women')"
+      (click)="selectOption1('women')"
+    >
+      Women
+    </li>
+    <li
+      [ngStyle]="{ color: selectedOption === 'men' ? 'black' : 'gray' }"
+      (click)="selectOption('men')"
+      (click)="selectOption1('men')"
+    >
+      Men
+    </li>
+    <li
+      [ngStyle]="{ color: selectedOption === 'kids' ? 'black' : 'gray' }"
+      (click)="selectOption('kids')"
+      (click)="selectOption1('kids')"
+    >
+      Kids
+    </li>
+  </ul>
+  <div>
+    <section class="products" id="products">
+      <div class="box-con size" style="display: flex">
+        <div class="box minn" *ngFor="let product of filteredProducts">
+          <div class="image immg">
+            <img
+              class="immmg"
+              src="https://assets.adidas.com/images/w_500,h_500,f_auto,q_auto,fl_lossy,c_fill,g_auto/e9c4ead781a949b3b5ddaf1900dc9fed_9366/%C3%A1o-hoodie-t%E1%BA%ADp-luy%E1%BB%87n-d%C3%A1ng-l%E1%BB%ADng-hiit-aeroready.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
