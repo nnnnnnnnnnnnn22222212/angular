@@ -29,17 +29,19 @@
       <div class="box" style="display: flex">
         <div *ngFor="let product of filteredProducts">
           <div class="box-cover">
-            <div >
-              <img
-                class="immmg"
-                src="https://assets.adidas.com/images/w_500,h_500,f_auto,q_auto,fl_lossy,c_fill,g_auto/e9c4ead781a949b3b5ddaf1900dc9fed_9366/%C3%A1o-hoodie-t%E1%BA%ADp-luy%E1%BB%87n-d%C3%A1ng-l%E1%BB%ADng-hiit-aeroready.jpg"
-                alt=""
-              />
-              <div class="price">{{ product.price }}</div>
-            </div>
-            <div class="box-text">
-              {{product.name}}
-            </div>
+            <a [routerLink]="['/product', product.id]">
+              <div>
+                <img
+                  class="immmg"
+                  src="https://assets.adidas.com/images/w_500,h_500,f_auto,q_auto,fl_lossy,c_fill,g_auto/e9c4ead781a949b3b5ddaf1900dc9fed_9366/%C3%A1o-hoodie-t%E1%BA%ADp-luy%E1%BB%87n-d%C3%A1ng-l%E1%BB%ADng-hiit-aeroready.jpg"
+                  alt=""
+                />
+                <div class="price">{{ product.price }}</div>
+              </div>
+              <div class="box-text">
+                {{ product.name }}
+              </div>
+            </a>
           </div>
         </div>
       </div>
