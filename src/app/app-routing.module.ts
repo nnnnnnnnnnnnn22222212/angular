@@ -18,14 +18,17 @@ import { ProducttComponent } from './component/productt/productt.component';
 
 import { ContactComponent } from './component/contact/contact.component';
 const routes: Routes = [
-  {path: '', component: LayoutComponent, children: [
-    {path: '', component: MainComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'product', component: ProducttComponent},
-    {path: 'contact', component: ContactComponent}
-  ]},
-  
-
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: '', component: MainComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'product', component: ProducttComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'product/:id', component: ProductDetailComponent },
+    ],
+  },
 ];
 
 @NgModule({

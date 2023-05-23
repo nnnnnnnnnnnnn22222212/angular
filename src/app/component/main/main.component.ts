@@ -8,11 +8,6 @@ import { producttt } from 'src/app/data/main';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent {
-  video = [
-    {
-      video: 'https://youtu.be/8-MFg_0wY4U',
-    },
-  ];
   products = producttt;
   productName = '';
   status: boolean = false;

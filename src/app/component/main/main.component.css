@@ -5,7 +5,8 @@
   width: 1200px;
 }
 section img {
-  width: 100px;
+  width: 300px;
+  height: 300px;
 }
 ul {
   display: flex;
@@ -17,4 +18,48 @@ ul li {
 }
 .active {
   color: black;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+.box {
+  display: flex;
+  gap: 30px;
+}
+.box-cover:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+.box-cover {
+  border: 1px solid white;
+}
+
+.price {
+  position: relative;
+  top: -30px;
+  left: 10px;
+  padding: 5px;
+  background-color: #fff;
+  width: 30%;
+  /* border-radius: 8px; */
+}
+.box-cover:hover .price {
+  top: -40px;
+  transition: 0.3s ease-in-out;
+}
+.box-text {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+@media (max-width: 767px) {
+  /* Styles for mobile devices with a maximum width of 767px */
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .box-cover {
+    width: auto;
+  }
 }
