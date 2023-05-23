@@ -20,4 +20,5 @@ console.log(this.product);
       // Fetch product details based on the ID and update the component's properties
     });
   }
+ 
 }
