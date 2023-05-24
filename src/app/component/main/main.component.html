@@ -47,11 +47,9 @@
           <div class="box-cover">
             <a [routerLink]="['/product', product.id]">
               <div>
-                <img
-                  class="immmg"
-                  src="{{product.imgUrl}}"
-                  alt=""
-                />
+
+                <img class="immmg" src="{{ product.imgUrl[0] }}" alt="" />
+
                 <div class="price">{{ product.price }}</div>
               </div>
               <div class="box-text">
