@@ -1,6 +1,50 @@
-<div *ngIf="product">
-  <h2>{{ product.name }}</h2>
-  <p>Price: {{ product.price }}</p>
-  <p>Description: {{ product.description }}</p>
-  <!-- Display other product details as needed -->
+<div class="sum" *ngIf="product">
+  <div class="flex-boxx">
+    <div class="left">
+      <div class="big-img">
+        <img
+          [src]="currentImageUrl"
+          alt=""
+        />
+      </div>
+      <div class="images">
+        <div class="small-img" *ngFor="let smallImageUrl of product.imgUrl">
+          <img
+            [src]="smallImageUrl"
+            alt=""
+            (click)="changeBigImage(smallImageUrl)"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="sss" *ngIf="product">
+      <div class="right">
+        <div class="pname">{{ product.name }}</div>
+        <div class="ratings">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <div class="price">{{ product.price }}</div>
+        <div class="size">
+          <p>Size :</p>
+          <div class="psize active">M</div>
+          <div class="psize">L</div>
+          <div class="psize">XL</div>
+          <div class="psize">XXL</div>
+        </div>
+        <div class="quantity">
+          <p>Quantity :</p>
+          <input type="number" min="1" max="5" value="1" />
+        </div>
+        <div class="btn-box">
+          <button class="cart-btn">Add to Cart</button>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
