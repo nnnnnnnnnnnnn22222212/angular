@@ -42,7 +42,7 @@ section{
     flex: 1 1 40rem;
     position: relative;
 }
-.about .roww .video-container .video{
+.about .roww .video-container img{
     width: 100%;
     border: 1.5rem solid #fff;
     border-radius: .5rem;
@@ -50,18 +50,7 @@ section{
     height: 100%;
     object-fit: cover;
 }
-.about .roww .video-container h3{
-    position: absolute;
-    top: 50%; 
-    transform: translateY(-50%);
-    font-size: 3rem;
-    color: #fff;
-    background: #fff;
-    width: 100%;
-    padding: 1rem 2rem;
-    text-align: center;
-    mix-blend-mode: screen;
-}
+
 .about .roww .content{
     flex: 1 1 40rem;
 
