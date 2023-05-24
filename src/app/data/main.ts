@@ -20,7 +20,8 @@ export const producttt: Products[] = [
     price: '3.300.000₫',
     description: '20%',
     imgUrl: [
-      'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9db8112467ed44449762af9e012267a8_9366/Terrex_Agravic_Trail_Running_Tee_Blue_HL1730_21_model.jpg',
+      'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1ef74eea99ed4500920daf90010451a3_9366/Always_Original_Graphic_Loose_Tee_Purple_IC1518_23_hover_model.jpg',
+      'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ef73e131da67435e8397af9001044801_9366/Always_Original_Graphic_Loose_Tee_Purple_IC1518_21_model.jpg'
     ],
     type: 'men',
   },
