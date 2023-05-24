@@ -1,3 +1,6 @@
+.heading {
+    text-align: center;
+}
 .products .size .minn:hover .immg .icc{
     bottom: 0;
 }
