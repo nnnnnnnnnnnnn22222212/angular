@@ -61,7 +61,7 @@
 .psize {
   width: 50px;
   height: 20px;
-  border: 1px solid #ff5e00;
+  border: 1px solid black;
   color: #000;
   text-align: center;
   margin: 0 10px;
@@ -69,7 +69,8 @@
 }
 .psize.active {
   border-width: 1.5px;
-  color: #ff5e00;
+  color: white;
+  background-color: black;
   font-weight: 500;
 }
 .quantity {
@@ -97,11 +98,11 @@
   outline: none;
   border-radius: 6px;
   cursor: pointer;
-  color: white;
 }
 .cart-btn {
-  background-color: #ff5e00;
+  background-color: black;
   margin-right: 20px;
+  color: white;
 }
 .buy-btn {
   background-color: #00aeff;

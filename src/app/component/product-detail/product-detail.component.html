@@ -2,10 +2,7 @@
   <div class="flex-boxx">
     <div class="left">
       <div class="big-img">
-        <img
-          [src]="currentImageUrl"
-          alt=""
-        />
+        <img [src]="currentImageUrl" alt="" />
       </div>
       <div class="images">
         <div class="small-img" *ngFor="let smallImageUrl of product.imgUrl">
@@ -27,14 +24,19 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star-half-alt"></i>
+          <i class="fa-solid fa-bars"></i>
         </div>
         <div class="price">{{ product.price }}</div>
         <div class="size">
           <p>Size :</p>
-          <div class="psize active">M</div>
-          <div class="psize">L</div>
-          <div class="psize">XL</div>
-          <div class="psize">XXL</div>
+          <div
+            class="psize"
+            [class.active]="selectedSize === size"
+            *ngFor="let size of sizes"
+            (click)="selectSize(size)"
+          >
+            {{ size }}
+          </div>
         </div>
         <div class="quantity">
           <p>Quantity :</p>

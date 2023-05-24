@@ -26,4 +26,10 @@ export class ProductDetailComponent {
   changeBigImage(url: string) {
     this.currentImageUrl = url;
   }
+  sizes: string[] = ['M', 'L', 'XL', 'XXL'];
+  selectedSize: string = 'M';
+
+  selectSize(size: string): void {
+    this.selectedSize = size;
+  }
 }
