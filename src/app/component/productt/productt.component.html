@@ -66,20 +66,25 @@
       list <span>products</span>
     </h1>
     <div class="box-con size" >
-      <div class="box minn" *ngFor="let product of products">
-        <span class="discout spnn">{{product.description}}</span>
-        <div class="image immg" >
-          <img class="immmg" src="{{product.imgUrl}}" alt="">
-          <div class="icons icc">
-            <a href="" class="fas fa-heart icca"></a>
-            <a href="" class="cart-btn icca card">add to card</a>
-            <a href="" class="fas fa-share icca"></a>
-          </div>
-        </div>
+      
+      <div class="box minn"  *ngFor="let product of products">
+            <a [routerLink]="['/product', product.id]">
+            <span class="discout spnn">{{product.description}}</span>
+             <div class="image immg" >
+              <img class="immmg" src="{{product.imgUrl}}" alt="">
+               <div class="icons icc">
+                <a href="" class="fas fa-heart icca"></a>
+                <a href="" class="cart-btn icca card">add to card</a>
+                <a href="" class="fas fa-share icca"></a>
+              </div>
+              </div>
+        </a>
         <div class="content">
           <h3>{{product.name}}</h3>
           <div class="price">{{product.price}}</div>
         </div>
+        
       </div>
+      
     </div>
   </section>
