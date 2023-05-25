@@ -15,7 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProducttComponent } from './component/productt/productt.component';
-
+import { LoginComponent } from './component/login/login.component';
 import { ContactComponent } from './component/contact/contact.component';
 const routes: Routes = [
   {
@@ -27,6 +27,7 @@ const routes: Routes = [
       { path: 'product', component: ProducttComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'product/:id', component: ProductDetailComponent },
+      { path: 'login', component: LoginComponent },
     ],
   },
 ];

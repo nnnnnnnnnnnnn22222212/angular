@@ -20,6 +20,7 @@ import { ProducttComponent } from './component/productt/productt.component';
 
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { MainComponent } from './component/main/main.component';
+import { LoginComponent } from './component/login/login.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MainComponent } from './component/main/main.component';
 
     NavbarComponent,
     MainComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
