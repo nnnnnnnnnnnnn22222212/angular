@@ -21,6 +21,7 @@ import { ProducttComponent } from './component/productt/productt.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { MainComponent } from './component/main/main.component';
 import { LoginComponent } from './component/login/login.component';
+import { ErrorComponent } from './component/error/error.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { LoginComponent } from './component/login/login.component';
     NavbarComponent,
     MainComponent,
     LoginComponent,
+    ErrorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
