@@ -114,6 +114,7 @@
 .cart-btn:hover {
   background-color: white;
   color: black;
+  border: 1px solid black;
   
 }
 .buy-btn:hover {
@@ -122,4 +123,16 @@
 
 .images {
   display: flex;
+}
+@media (max-width: 768px) {
+  .flex-boxx {
+    flex-direction: column;
+    /* Adjust layout for smaller screens */
+  }
+  
+  .left,
+  .sss {
+    width: 100%;
+    /* Make the left and right columns occupy full width */
+  }
 }
