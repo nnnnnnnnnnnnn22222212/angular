@@ -1,0 +1,128 @@
+img {
+  width: 100%;
+
+  z-index: -100;
+  object-fit: cover;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* CSS */
+button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.banner img {
+  margin-right: 10px;
+}
+
+.banner h2,
+.banner h4 {
+  margin: 0;
+}
+
+.banner button {
+  margin-top: 10px;
+}
+.banner .content {
+  position: absolute;
+  width: 25%;
+  margin-left: 30px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.banner img {
+  margin-right: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner .content {
+  position: absolute;
+  width: 100%;
+  max-width: 25%;
+  margin-left: 30px;
+}
+
+.banner h2,
+.banner p {
+  margin: 0;
+}
+
+.banner button {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .banner .content {
+    max-width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .banner img {
+    width: 100vw;
+  height: 60vh;
+    z-index: -100;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .banner .content {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    font-size: 10px;
+  }
+
+ 
+
+  .banner button {
+    margin-top: 10px;
+    font-size: 8px;
+  }
+}

@@ -1,18 +1,39 @@
+<div class="banner-container">
+  <app-banner
+    [imgUrl]="
+      'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/viVN/Images/ss23-aurora-hp-mh-onyx-beluga-sg-d_tcm337-1026963.jpg'
+    "
+    [heading]="'New Heading'"
+    [text1]="'AVAILABLE THROUGH ADIDAS APP. DOWNLOAD, REGISTER, PARTICIPATE'"
+  ></app-banner>
+  <app-banner
+    [imgUrl]="
+      'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/viVN/Images/vn-sale-hp-mh-dt_tcm337-905236.png'
+    "
+    [heading]="'CELEBRATE SPORTS'"
+    [text1]="
+      'Giá hiển thị trên trang web là giá bán cuối cùng. Một số sản phẩm ngoại lệ. Điều khoản và Điều kiện đi kèm.'
+    "
+  ></app-banner>
+  <app-bannervid></app-bannervid>
+</div>
+<!-- 
 <section class="about" id="about">
   <h1 class="heading"><span>about</span> us</h1>
   <div class="roww">
-      <div class="video-container">
-        <img src="https://img3.thuthuatphanmem.vn/uploads/2019/10/14/anh-lookbook-thoi-trang_113854100.jpg" alt="">
-       
-      </div>
-      <div class="content">
-        <h3>Why chose us?</h3>
-        <p>Phong Cách, GIẢN DỊ VƯỢT THỜI TRANG</p>
-        <p>GIẢM GIÁ ĐẾN 40% THỜI TRANG NỮ</p>
-        <a href="about" class="btn">learn more</a>
-      </div>
+    <div class="video-container">
+      <img
+        src="https://img3.thuthuatphanmem.vn/uploads/2019/10/14/anh-lookbook-thoi-trang_113854100.jpg"
+        alt=""
+      />
+    </div>
+    <div class="content">
+      <h3>Why chose us?</h3>
+      <p>Phong Cách, GIẢN DỊ VƯỢT THỜI TRANG</p>
+      <p>GIẢM GIÁ ĐẾN 40% THỜI TRANG NỮ</p>
+      <a href="about" class="btn">learn more</a>
+    </div>
   </div>
-
 </section>
 <h1 class="heading"><span>Products</span> us</h1>
 <div class="container">
@@ -48,7 +69,6 @@
           <div class="box-cover">
             <a [routerLink]="['/product', product.id]">
               <div>
-
                 <img class="immmg" src="{{ product.imgUrl[0] }}" alt="" />
 
                 <div class="price">{{ product.price }}</div>
@@ -62,4 +82,4 @@
       </div>
     </section>
   </div>
-</div>
+</div> -->

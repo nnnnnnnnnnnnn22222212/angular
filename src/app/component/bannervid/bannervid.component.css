@@ -1,0 +1,126 @@
+.controls button {
+  position: relative;
+  top: -100px;
+  left: 30px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.banner .content h2,
+p {
+  margin-left: 20px;
+  color: white;
+}
+.banner .content button {
+  margin-left: 20px;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* CSS */
+.content button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: black;
+  z-index: 1;
+  margin: 20px;
+}
+
+.content button:after {
+  content: "";
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+  z-index: -1;
+}
+
+.content button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  margin-right: 10px;
+}
+
+.banner h2,
+.banner h4 {
+  margin: 0;
+}
+
+.banner button {
+  margin-top: 10px;
+  color: white;
+  border: 1px white solid;
+}
+.banner .content {
+  position: absolute;
+  width: 25%;
+  margin-left: 30px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.video-container video {
+  width: calc(100vw - 16px);
+  height: 90vh;
+  object-fit: cover;
+  z-index: -99;
+  overflow: clip;
+}
+
+@media (max-width: 1080px) {
+  .video-container video {
+    width: 99.9vw;
+    height: 90vh;
+  }
+}
+@media (max-width: 768px) {
+.banner .content{
+  font-size: 9px;
+  width: 80%;
+}
+.banner .content button{
+  font-size: 9px;
+}
+.controls button {
+  position: relative;
+  top: -100px;
+  left: 30px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+
+}

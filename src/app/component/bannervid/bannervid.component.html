@@ -1,0 +1,25 @@
+<div class="banner">
+  <div class="video-container">
+    <video #videoPlayer [src]="videoUrl" autoplay></video>
+    <div class="controls">
+      <button (click)="toggleVideoPlayback()">
+        <i *ngIf="isPlaying" class="fa fa-pause"></i>
+        <i *ngIf="!isPlaying" class="fa fa-play"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>move for the planet</h2>
+    <p>
+      Tham gia cùng chúng tôi từ ngày 1-12 tháng 6 và vận động vì những nơi
+      chúng ta tung hoành. Với 34 môn thể thao đủ điều kiện, bất kể chúng ta vận
+      động ra sao, chỉ cần chúng ta hoà nhịp.
+    </p>
+
+    <button>Let's start <i class="fa fa-arrow-right"></i></button>
+
+    <br />
+    <button>Find out more <i class="fa fa-arrow-right"></i></button>
+  </div>
+</div>

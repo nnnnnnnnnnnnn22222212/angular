@@ -22,6 +22,8 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { MainComponent } from './component/main/main.component';
 import { LoginComponent } from './component/login/login.component';
 import { ErrorComponent } from './component/error/error.component';
+import { BannerComponent } from './component/banner/banner.component';
+import { BannervidComponent } from './component/bannervid/bannervid.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { ErrorComponent } from './component/error/error.component';
     MainComponent,
     LoginComponent,
     ErrorComponent,
+    BannerComponent,
+    BannervidComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

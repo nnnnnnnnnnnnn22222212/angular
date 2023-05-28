@@ -12,19 +12,21 @@ export class NavbarComponent {
     this.isClassActive = !this.isClassActive;
   }
 
-  isScrolled: boolean = false;
+  navbarHidden = false;
+  private lastScrollOffset = 0;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const scrollThreshold = 300; // Define your scroll threshold here
+  @HostListener('window:scroll')
+  onScroll() {
+    const currentScrollOffset = window.pageYOffset;
 
-    const scrollPosition =
-      window.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop ||
-      0;
+    if (currentScrollOffset > this.lastScrollOffset) {
+      // Scrolling down
+      this.navbarHidden = true;
+    } else {
+      // Scrolling up
+      this.navbarHidden = false;
+    }
 
-    this.isScrolled = scrollPosition > scrollThreshold;
-    console.log();
+    this.lastScrollOffset = currentScrollOffset;
   }
 }
