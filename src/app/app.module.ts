@@ -24,6 +24,7 @@ import { LoginComponent } from './component/login/login.component';
 import { ErrorComponent } from './component/error/error.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { BannervidComponent } from './component/bannervid/bannervid.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { BannervidComponent } from './component/bannervid/bannervid.component';
     BannerComponent,
     BannervidComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
