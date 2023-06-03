@@ -6,9 +6,9 @@ import { Products } from './common/main';
   providedIn: 'root',
 })
 export class ProductService {
-  // private apiUrl = 'http://127.0.0.1:8088/api/products';
+  // private apiUrl = 'http://localhost:3000/products';
 
-  private apiUrl = 'http://localhost:8080/api/products';
+  private apiUrl = 'http://localhost:3000/products';
 
   // Thay đổi URL tương ứng với server của bạn
 

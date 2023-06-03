@@ -31,9 +31,9 @@
       Women
     </li>
     <li
-      [ngStyle]="{ color: selectedOption === 'men' ? 'black' : 'gray' }"
-      (click)="selectOption('men')"
-      (click)="selectOption1('men')"
+      [ngStyle]="{ color: selectedOption === 'man' ? 'black' : 'gray' }"
+      (click)="selectOption('man')"
+      (click)="selectOption1('man')"
     >
       Men
     </li>
@@ -50,7 +50,7 @@
       <div class="box" style="display: flex">
         <div *ngFor="let product of filteredProducts">
           <div class="box-cover">
-            <a [routerLink]="['/product', product._id]">
+            <a [routerLink]="['/product', product.id]">
               <div>
                 <img class="immmg" src="{{ product.imgUrl[0] }}" alt="" />
 
@@ -66,3 +66,4 @@
     </section>
   </div>
 </div>
+<app-middleinfor></app-middleinfor>

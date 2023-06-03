@@ -21,7 +21,7 @@ export class ProductDetailComponent {
   getProductById(id: string): void {
     this.productService.getProduct(id).subscribe(
       (response) => {
-        this.product = response.data;
+        this.product = response;
         if (this.product) {
           this.currentImageUrl = this.product.imgUrl[0];
         }

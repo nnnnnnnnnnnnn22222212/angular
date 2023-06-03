@@ -14,8 +14,8 @@ export class MainComponent implements OnInit {
   getProducts() {
     this.productService.getProducts().subscribe(
       (response: any) => {
-        this.products = response.data;
-        console.log([...response.data]);
+        this.products = response;
+
         this.filterProducts();
       },
       (error) => {
@@ -45,6 +45,7 @@ export class MainComponent implements OnInit {
 
   selectOption(option: string): void {
     this.selectedOption = option;
+    console.log(this.selectedOption);
   }
 
   filteredProducts: any[] = [];
@@ -57,9 +58,10 @@ export class MainComponent implements OnInit {
   filterProducts(): void {
     if (this.products) {
       this.filteredProducts = this.products.filter(
-        (product: { type: string }) => product.type === this.selectedOption
+        (product: { type: string[] }) =>
+          product.type.includes(this.selectedOption)
       );
-      console.log(this.products);
+      console.log(this.filteredProducts);
     }
   }
 }

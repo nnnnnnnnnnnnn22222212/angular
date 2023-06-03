@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -25,6 +26,7 @@ import { ErrorComponent } from './component/error/error.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { BannervidComponent } from './component/bannervid/bannervid.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MiddleinforComponent } from './middleinfor/middleinfor.component';
 
 @NgModule({
   declarations: [
@@ -47,8 +49,15 @@ import { HttpClientModule } from '@angular/common/http';
     ErrorComponent,
     BannerComponent,
     BannervidComponent,
+    MiddleinforComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,HttpClientModule],
+  imports: [
+    FormsModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
