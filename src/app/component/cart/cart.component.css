@@ -1,0 +1,13 @@
+.cart-icon {
+    font-size: 24px;
+    color: #333;
+    margin-right: 5px;
+  }
+  
+  .cart-number {
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 50%;
+  }
+  

@@ -1,5 +1,11 @@
-import { Component, HostListener } from '@angular/core';
-
+import {
+  Component,
+  HostListener,
+  OnInit,
+  ChangeDetectorRef,
+} from '@angular/core';
+import { SharedService } from 'src/app/shared.service';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,6 +13,8 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavbarComponent {
   isClassActive = false;
+  username: string | null = null;
+  id: number | null = null;
 
   changeClassName() {
     this.isClassActive = !this.isClassActive;
@@ -28,5 +36,21 @@ export class NavbarComponent {
     }
 
     this.lastScrollOffset = currentScrollOffset;
+  }
+  userName: string | undefined;
+
+  constructor(private sharedService: SharedService) {}
+
+  ngOnInit() {
+    // Retrieve the user's name from the shared service
+    this.sharedService.username$.subscribe((username) => {
+      this.username = username;
+    });
+  console.log(this.sharedService.getId());
+  }
+  logout() {
+    // Delete the username from local storage
+    this.sharedService.setUserName(null);
+    this.sharedService.clearAll();
   }
 }

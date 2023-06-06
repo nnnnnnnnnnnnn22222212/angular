@@ -54,7 +54,7 @@
               <div>
                 <img class="immmg" src="{{ product.imgUrl[0] }}" alt="" />
 
-                <div class="price">{{ product.prices }}</div>
+                <div class="price">{{ product.price | currency:'VND' }}</div>
                 <div class="box-text">
                   {{ product.name }}
                 </div>

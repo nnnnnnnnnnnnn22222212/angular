@@ -14,7 +14,7 @@
       ],
       "type": "women",
       "description": "100",
-      "prices": "1,050,000₫"
+      "price": 1050000
     },
     {
       "_id": {
@@ -22,7 +22,7 @@
       },
       "id": "2",
       "name": "ADICOLOR CLASSICS TREFOIL HOODIE",
-      "prices": "2,000,000₫",
+      "price": 2000000,
       "description": "20%",
       "imgUrl": [
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/185643c10c5441f3b8bcaf9d00d7ae57_9366/Adicolor_Classics_Trefoil_Hoodie_Purple_IA4881_21_model.jpg",
@@ -38,7 +38,7 @@
       },
       "id": "3",
       "name": "FC BAYERN 23/24 HOME JERSEY",
-      "prices": "2,200,000₫",
+      "price": 2200000,
       "description": "30%",
       "imgUrl": [
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/490f114ae9a74f18ad323975e75aa44f_9366/FC_Bayern_23-24_Home_Jersey_White_IJ7442_HM1.jpg",
@@ -54,7 +54,7 @@
       },
       "id": "4",
       "name": "HIIT AEROREADY QUICKBURN TRAINING TEE",
-      "prices": "950,000₫",
+      "price": 950000,
       "description": "30%",
       "imgUrl": [
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1c983d8abd674f4b97ffaf35010b4b58_9366/HIIT_AEROREADY_Quickburn_Training_Tee_Black_HY5407_21_model.jpg",
@@ -78,14 +78,57 @@
         "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ceba4fb4a1c4b42bd16af2b0015ec23_9366/Run_for_the_Oceans_Tank_Top_Pink_HZ6006_01_laydown.jpg"
       ],
       "type": "women",
-      "prices": "900,000₫"
+      "price": 900000
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": 2,
+      "username": "admin1",
+      "password": "1234567",
+      "email": "admin@gmail.com",
+      "cart": [
+        {
+          "id": "1",
+          "name": "ADICOLOR CLASSICS TREFOIL HOODIE",
+          "price": "900,000₫",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
       "username": "admin",
-      "password": "1234567"
+      "password": "1234567",
+      "email": "admin@gmail.com",
+      "role": "user",
+      "cart": [
+        {
+          "id": "1",
+          "name": "ADICOLOR CLASSICS TREFOIL HOODIE",
+          "price": 900000,
+          "quantity": 5
+        },
+        {
+          "id": "1",
+          "name": "ADICOLOR CLASSICS TREFOIL HOODIE",
+          "price": 900000,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "1234567",
+      "role": "admin",
+      "id": 5
+    },
+    {
+      "username": "admin",
+      "email": "admin",
+      "password": "1234567",
+      "id": 6
     }
   ]
 }

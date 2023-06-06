@@ -1,24 +1,61 @@
 <body>
-    <div class="main">  	
-        <input type="checkbox" id="chk" aria-hidden="true">
-    
-            <div class="signup">
-                <form>
-                    <label for="chk" aria-hidden="true">Sign up</label>
-                    <input type="text" name="txt" placeholder="User name" required="">
-                    <input type="email" name="email" placeholder="Email" required="">
-                    <input type="password" name="pswd" placeholder="Password" required="">
-                    <button>Sign up</button>
-                </form>
-            </div>
-    
-            <div class="login">
-                <form>
-                    <label for="chk" aria-hidden="true">Login</label>
-                    <input type="email" name="email" placeholder="Email" required="">
-                    <input type="password" name="pswd" placeholder="Password" required="">
-                    <button>Login</button>
-                </form>
-            </div>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" />
+
+    <div class="signup">
+      <form (ngSubmit)="signup()">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input
+          type="text"
+          name="txt"
+          [(ngModel)]="username"
+          placeholder="User name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          name="pswd"
+          [(ngModel)]="password"
+          placeholder="Password"
+          required
+        />
+        <button>Sign up</button>
+      </form>
     </div>
+
+    <div class="login">
+      <form (ngSubmit)="login()">
+        <div>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            [(ngModel)]="username"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            [(ngModel)]="password"
+            required
+          />
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>

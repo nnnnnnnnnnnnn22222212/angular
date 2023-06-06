@@ -1,0 +1,8 @@
+<div *ngIf="cartItemsNumber">
+  <i class="fa-solid fa-cart-shopping cart-icon"></i>
+  <span class="cart-number"> {{ getTotalQuantity() }}</span>
+</div>
+
+<div *ngIf="!cartItemsNumber">
+  <p>No items in the cart.</p>
+</div>

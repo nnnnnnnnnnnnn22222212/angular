@@ -18,6 +18,7 @@ import { ProducttComponent } from './component/productt/productt.component';
 import { LoginComponent } from './component/login/login.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ErrorComponent } from './component/error/error.component';
+import { CartDetailComponent } from './component/cart-detail/cart-detail.component';
 const routes: Routes = [
   {
     path: '',
@@ -29,10 +30,10 @@ const routes: Routes = [
       { path: 'contact', component: ContactComponent },
       { path: 'product/:id', component: ProductDetailComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'cart', component: CartDetailComponent },
     ],
-      
   },
-  {path: '**', component: ErrorComponent}
+  { path: '**', component: ErrorComponent },
 ];
 
 @NgModule({

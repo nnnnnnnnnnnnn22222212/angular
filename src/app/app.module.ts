@@ -26,7 +26,9 @@ import { ErrorComponent } from './component/error/error.component';
 import { BannerComponent } from './component/banner/banner.component';
 import { BannervidComponent } from './component/bannervid/bannervid.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MiddleinforComponent } from './middleinfor/middleinfor.component';
+import { MiddleinforComponent } from './component/middleinfor/middleinfor.component';
+import { CartComponent } from './component/cart/cart.component';
+import { CartDetailComponent } from './component/cart-detail/cart-detail.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import { MiddleinforComponent } from './middleinfor/middleinfor.component';
     BannerComponent,
     BannervidComponent,
     MiddleinforComponent,
+    CartComponent,
+    CartDetailComponent,
   ],
   imports: [
     FormsModule,
