@@ -46,6 +46,7 @@ export class ProductDetailComponent {
         price: this.product.price,
         size: this.selectedSize,
         quantity: this.quantity,
+        img:this.product.imgUrl[0]
       };
       // Call the appropriate method to add the item to the cart
       const id = this.sharedService.getId();

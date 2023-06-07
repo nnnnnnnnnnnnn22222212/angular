@@ -92,6 +92,8 @@
           "id": "1",
           "name": "ADICOLOR CLASSICS TREFOIL HOODIE",
           "price": "900,000₫",
+          "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/185643c10c5441f3b8bcaf9d00d7ae57_9366/Adicolor_Classics_Trefoil_Hoodie_Purple_IA4881_21_model.jpg",
+          "size": "M",
           "quantity": 5
         }
       ]
@@ -107,12 +109,18 @@
           "id": "1",
           "name": "ADICOLOR CLASSICS TREFOIL HOODIE",
           "price": 900000,
+          "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/185643c10c5441f3b8bcaf9d00d7ae57_9366/Adicolor_Classics_Trefoil_Hoodie_Purple_IA4881_21_model.jpg",
+
+          "size": "M",
           "quantity": 5
         },
         {
           "id": "1",
           "name": "ADICOLOR CLASSICS TREFOIL HOODIE",
+          "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/185643c10c5441f3b8bcaf9d00d7ae57_9366/Adicolor_Classics_Trefoil_Hoodie_Purple_IA4881_21_model.jpg",
+
           "price": 900000,
+          "size": "M",
           "quantity": 3
         }
       ]

@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { AddProductsComponent } from './component/add-products/add-products.component';
+import { AddProductsComponent } from './admin/add-products/add-products.component';
 import { MainComponent } from './component/main/main.component';
 import { ProductItemComponent } from './component/product-item/product-item.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
@@ -19,6 +19,7 @@ import { LoginComponent } from './component/login/login.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ErrorComponent } from './component/error/error.component';
 import { CartDetailComponent } from './component/cart-detail/cart-detail.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -31,6 +32,15 @@ const routes: Routes = [
       { path: 'product/:id', component: ProductDetailComponent },
       { path: 'login', component: LoginComponent },
       { path: 'cart', component: CartDetailComponent },
+    ],
+  },
+  {
+    path: 'admin',
+    component: LayoutAdminComponent,
+    children: [
+      { path: 'add-product', component: AddProductsComponent },
+      // { path: 'update-product/:id', component: UpdateProductComponent },
+      // { path: 'show-products', component: ShowProductsComponent },
     ],
   },
   { path: '**', component: ErrorComponent },

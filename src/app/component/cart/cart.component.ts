@@ -31,10 +31,8 @@ export class CartComponent {
   getTotalQuantity(): number {
     let totalQuantity = 0;
     for (const item of this.cartItems) {
-      console.log(item);
       totalQuantity += item.quantity;
     }
-    console.log(totalQuantity);
     return totalQuantity;
   }
 
@@ -45,20 +43,16 @@ export class CartComponent {
   }
   ngOnInit() {
     this.cartItems = this.sharedService.getCart() || [];
-    console.log(this.cartItems);
 
     this.cartItems.forEach((items) => {
       this.f1quantity += items.quantity;
     });
-    console.log(this.f1quantity);
     const userId = this.sharedService.getId();
     if (userId !== null) {
       this.userService.getCart(userId).subscribe(
         (cartItems) => {
           this.cartItemsNumber = 0;
-          console.log(cartItems);
           cartItems.cart.forEach((item: any) => {
-            console.log(item.quantity);
             this.cartItemsNumber += item.quantity;
           });
         },

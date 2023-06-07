@@ -1,4 +1,4 @@
-<div *ngIf="cartItemsNumber">
+<div *ngIf="cartItemsNumber" routerLink="cart">
   <i class="fa-solid fa-cart-shopping cart-icon"></i>
   <span class="cart-number"> {{ getTotalQuantity() }}</span>
 </div>

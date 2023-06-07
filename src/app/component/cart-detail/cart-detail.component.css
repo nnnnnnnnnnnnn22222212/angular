@@ -1,0 +1,69 @@
+.container {
+  
+  width: 1000px;
+  display: flex;
+  margin: auto;
+  gap: 30px;
+}
+.card{
+    margin-top: 200px;
+}
+.container h2 {
+
+  font-size: 32px;
+}
+.cart-container {
+  border: 1px solid black;
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  width: 650px;
+}
+.cart-container .mg img {
+  width: 250px;
+  height: 100%;
+}
+.container1 {
+  display: flex;
+  gap: 30px;
+}
+.checkout{
+    width: 100%;
+}
+button {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    margin-top:10px ;
+  }
+  button:after {
+    content: "";
+    background-color: white;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  button:hover:after {
+    top: 0px;
+    left: 0px;
+  }

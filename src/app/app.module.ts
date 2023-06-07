@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { AddProductsComponent } from './component/add-products/add-products.component';
+import { AddProductsComponent } from './admin/add-products/add-products.component';
 import { ProductItemComponent } from './component/product-item/product-item.component';
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { ProductComponent } from './component/product/product.component';
@@ -29,7 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MiddleinforComponent } from './component/middleinfor/middleinfor.component';
 import { CartComponent } from './component/cart/cart.component';
 import { CartDetailComponent } from './component/cart-detail/cart-detail.component';
-
+// import { CreateComponent } from './admin/create/create.component';
+import { UpdateComponent } from './admin/update/update.component';
+import { AdminComponent } from './admin/admin/admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +56,9 @@ import { CartDetailComponent } from './component/cart-detail/cart-detail.compone
     MiddleinforComponent,
     CartComponent,
     CartDetailComponent,
+    // CreateComponent,
+    UpdateComponent,
+    AdminComponent,
   ],
   imports: [
     FormsModule,

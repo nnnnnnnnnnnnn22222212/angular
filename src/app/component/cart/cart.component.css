@@ -9,5 +9,10 @@
     color: #fff;
     padding: 4px 8px;
     border-radius: 50%;
+    position: relative;
+    top:-10px;
+    left: -10px;
   }
-  
+div :hover{
+  cursor: pointer;
+}
